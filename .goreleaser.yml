@@ -10,11 +10,18 @@
 builds:
 - env:
   - CGO_ENABLED=0
+  main: ./cmd/golie/main.go
+  binary: golie
 
   goos:
     - linux
     - windows
     - darwin
+  goarch:
+    - 386
+    - amd64
+    - arm
+    - arm64
 
 archives:
 - replacements:
