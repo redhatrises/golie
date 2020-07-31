@@ -46,7 +46,9 @@ changelog:
 nfpms:
   - id: golie
 
+    file_name_template: "{{ .ProjectName }}-{{ .Version }}.{{ .Arch }}"
     replacements:
+      386: i686
       amd64: x86_64
 
     formats:
