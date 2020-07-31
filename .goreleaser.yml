@@ -44,18 +44,18 @@ changelog:
     - '^test:'
 
 nfpms:
-  id: golie
+  - id: golie
 
-  replacements:
-    amd64: x86_64
+    replacements:
+      amd64: x86_64
 
-  formats:
-    - deb
-    - rpm
+    formats:
+      - deb
+      - rpm
 
-  bindir: /usr/bin
+    bindir: /usr/bin
 
-  homepage: github.com/rolieup/golie
-  license: CC0
-  description: A client/server implementation of ROLIE written in GO
-  release: 1
+    homepage: github.com/rolieup/golie
+    license: CC0
+    description: A client/server implementation of ROLIE written in GO
+    release: 1
