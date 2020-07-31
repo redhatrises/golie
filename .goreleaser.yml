@@ -33,6 +33,7 @@ archives:
 
 checksum:
   name_template: 'checksums.txt'
+  algorithm: sha256
 snapshot:
   name_template: "{{ .Tag }}-next"
 changelog:
@@ -41,3 +42,20 @@ changelog:
     exclude:
     - '^docs:'
     - '^test:'
+
+nfpms:
+  id: golie
+
+  replacements:
+    amd64: x86_64
+
+  formats:
+    - deb
+    - rpm
+
+  bindir: /usr/bin
+
+  homepage: github.com/rolieup/golie
+  license: CC0
+  description: A client/server implementation of ROLIE written in GO
+  release: 1
